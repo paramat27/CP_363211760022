@@ -1,0 +1,22 @@
+package Lab8;
+
+public class ArrayException {
+    public static void main(String[] args) {
+
+        int num[] = {10,20,30,40,50};
+
+        System.out.println(num[0]);
+        try {
+            System.out.println(num[3]);
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("Index is invalid.");
+            System.out.println(e);
+        }finally {
+            num[4] = 100;
+        }
+        System.out.println(num[4]);
+
+
+
+    }
+}
